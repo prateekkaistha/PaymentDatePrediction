@@ -158,3 +158,134 @@ td {
   .my-cb{
       background-color: red;
   }
+
+
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+
+  .modal-content {
+    background-color: #2A3E4C;
+    margin: auto;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 70%;
+    color:#FFFFFF;
+    opacity: 1;
+    border-radius: 10px ;
+  }
+
+  .edit-modal-content{
+    background-color: #2A3E4C;
+    margin: auto;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 35%;
+    color:#FFFFFF;
+    opacity: 1;
+    border-radius: 10px ;
+  }
+  
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .add-modal-content{
+      display: flex;
+  }
+
+  .add-modal-inf{
+      display: flex;
+      /* height:2rem; */
+      margin:1rem;
+  }
+
+  .add-modal-label{
+      width:10rem;
+      /* text-align: center; */
+      /* border: #FFFFFF solid 2px; */
+  }
+  .add-modal-footer{
+    width:100%;
+    display: flex;
+    border-top: #283A46 solid 3px; 
+  }
+
+  .add-modal-header{
+      width:100%;
+      display: flex;
+
+      /* border-bottom:#FFFFFF solid 5px; */
+      border-bottom: #283A46 solid 3px; 
+  }
+  .add-modal-inp{
+    background-color: #283A46;
+    color:#97A1A9;
+    border: 1px solid #97A1A9;
+    border-radius: 5px;
+    padding: 5px;
+    font:large;
+    opacity: 1;
+
+    margin: auto;
+    padding: 10px 20px;
+    text-align: left;
+
+    font-size: 16px;
+    width:15rem;
+
+}
+
+#add-btn-cancel{
+    float:left;
+    border:none;
+    color:#14AFF1;
+}
+
+#add-btn-clear{
+    float:right;
+    color:#FFFFFF;
+
+}
+
+#add-btn-add{
+    float:right;
+    background-color:#14AFF1;
+    color:#FFFFFF;
+}
+
+
+#add-notes{
+    height:8rem;
+}
+
+
+.fade{
+    color:#C0C6CA;
+}

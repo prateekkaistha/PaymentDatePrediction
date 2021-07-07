@@ -3,6 +3,7 @@
     <head>
         <title>PDP</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="./js/script.js"></script> 
     </head>
     <body>
         <header id = "main-header">
@@ -22,13 +23,135 @@
             </div>
         </section>
         <section class="container">
-                <div class="box">
+                
+          <div class="box">
+                  <div id="editModal" class="modal">
+                    <div class="edit-modal-content">
+                    <div class="add-modal-header">
+                      <div>
+                        <h1>Edit Invoice</h1>
+                      </div>
+                      <div class="cross">
+                        <span class="close">&times;</span>
+                      </div>
+                    </div>
+                    <div class="add-modal-content">
+                      <form >
+                        <div class="add-modal-inf">
+                          <label class="add-modal-label">Invoice Amount</label>
+                          <input class="add-modal-inp" type = "text" name = "first_name" />
+                        </div>
+                        <div class="add-modal-inf">
+                          <label class="add-modal-label">Notes</label>
+                          <input id="add-notes" class="add-modal-inp" type = "text" name = "last_name" />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="add-modal-footer">
+                      <button id="add-btn-cancel" class = "btn" type="button">Cancel</button> 
+                      <button id="add-btn-clear" class = "btn" type="button">Clear</button> 
+                      <button id="add-btn-add" class = "btn" type="button">Add</button> 
+                      
+                    </div>
+
+                  </div>
+                  </div>
+
+                  <div id="deleteModal" class="modal">
+                    <div class="edit-modal-content">
+                    <div class="add-modal-header">
+                      <div>
+                        <h1>Delete record(s)?</h1>
+                      </div>
+                      <div class="cross">
+                        <span class="close">&times;</span>
+                      </div>
+                    </div>
+                    <div class="add-modal-content">
+                      <div class="container">
+                        <p class="fade">You'll lose your record(s) after this action. We can't recover them once you delete. </p>
+                        <p class="fade">Are you sure you want to <span style="color: #FF5E5E">permanently delete</span> them?</p>
+                      
+                      </div>
+                    </div>
+                    <div class="add-modal-footer">
+                      <button id="add-btn-clear" class = "btn" type="button">Cancel</button> 
+                      <button id="add-btn-add" class = "btn" type="button">Delete</button> 
+                      
+                    </div>
+
+                  </div>
+                  </div>
+
+
+                  <div id="addModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <div class="add-modal-header">
+                        <div>
+                          <h1>Add Invoice</h1>
+                        </div>
+                        <div class="cross">
+                          <span class="close">&times;</span>
+                        </div>
+                      </div>
+                      <div class="add-modal-content">
+                        <div class="left-side-add">
+                          <form >
+                            <div class="add-modal-inf">
+                              <label class="add-modal-label">Customer Name</label>
+                              <input class="add-modal-inp" type = "text" name = "first_name" />
+                            </div>
+                            <div class="add-modal-inf">
+                              <label class="add-modal-label">Customer No.</label>
+                              <input class="add-modal-inp" type = "text" name = "last_name" />
+                            </div>
+                            <div class="add-modal-inf">
+                              <label class="add-modal-label">Invoice No.</label>
+                              
+                              <input class="add-modal-inp" type = "text" name = "first_name" />
+                            </div>
+                            <div class="add-modal-inf">
+                              <label class="add-modal-label">Invoice Amount</label>
+                            
+                              <input class="add-modal-inp" type = "text" name = "last_name" />
+                            </div>
+                            
+                            
+                          </form>
+                        </div>
+                        <div class="right-side-add">
+                          <form >
+                            <div class="add-modal-inf">
+                              <label class="add-modal-label">Due Date</label>
+                              <input class="add-modal-inp" type = "date" name = "first_name" />
+                            </div>
+                            <div class="add-modal-inf">
+                              <label class="add-modal-label">Notes</label>
+                              <input id="add-notes" class="add-modal-inp" type = "text" name = "last_name" />
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+
+                      <div class="add-modal-footer">
+                        <button id="add-btn-cancel" class = "btn" type="button">Cancel</button> 
+                        <button id="add-btn-clear" class = "btn" type="button">Clear</button> 
+                        <button id="add-btn-add" class = "btn" type="button">Add</button> 
+                           
+                      </div>
+                    </div>
+                  
+                  </div>
+
+
                     <div class="topnav">
                         <div class="topnav-right">
-                            <button class = "btn" type="button"><img src="./images/Path 18189.svg"> Add</button> 
-                            <button class = "btn" type="button"><img src="./images/Path 18191.svg"> Edit</button> 
-                            <button class = "btn" type="button"><img src="./images/Path 18189-1.svg"> Delete</button> 
-                            <input class = "search" type="text" id="fname" name="fname" placeholder="Search by invoice Number ">
+                            <button id="add-btn" class = "btn" type="button" onclick="handleAddButton()"><img src="./images/Path 18189.svg"> Add</button> 
+                            <button id="edit-btn" class = "btn" type="button" onclick="handleEditButton()"><img src="./images/Path 18191.svg"> Edit</button> 
+                            <button id="delete-btn" class = "btn" type="button" onclick="handleDeleteButton()"><img src="./images/Path 18189-1.svg"> Delete</button> 
+                            <input  id="search-bar" class = "search" type="text" id="fname" name="fname" placeholder="Search by invoice Number ">
                         </div>
                       </div> 
 
@@ -36,7 +159,7 @@
 
                     <table class="my-table" style="width:100%">
                         <tr class="table-heading">
-                          <th><input type="checkbox"></th>
+                          <th></th>
                           <th>Customer Name</th>
                           <th>Customer #</th>
                           <th>Invoice #</th>
