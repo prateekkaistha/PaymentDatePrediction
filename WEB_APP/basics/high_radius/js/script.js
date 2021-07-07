@@ -57,3 +57,15 @@ function handleDeleteButton(){
     console.log("DELETE MODAL")
     deleteModal.style.display = "block";
 }
+
+function handleCancelAdd(){
+    addModal.style.display = "none";
+}
+
+function handleCancelEdit(){
+    editModal.style.display="none";
+}
+
+function handleCancelDelete(){
+    deleteModal.style.display="none";
+}

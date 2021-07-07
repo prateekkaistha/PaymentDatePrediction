@@ -31,9 +31,9 @@
                       <div>
                         <h1>Edit Invoice</h1>
                       </div>
-                      <div class="cross">
+                      <!-- <div class="cross">
                         <span class="close">&times;</span>
-                      </div>
+                      </div> -->
                     </div>
                     <div class="add-modal-content">
                       <form >
@@ -48,7 +48,7 @@
                       </form>
                     </div>
                     <div class="add-modal-footer">
-                      <button id="add-btn-cancel" class = "btn" type="button">Cancel</button> 
+                      <button id="add-btn-cancel" class = "btn" type="button" onclick="handleCancelEdit()">Cancel</button> 
                       <button id="add-btn-clear" class = "btn" type="button">Clear</button> 
                       <button id="add-btn-add" class = "btn" type="button">Add</button> 
                       
@@ -63,9 +63,9 @@
                       <div>
                         <h1>Delete record(s)?</h1>
                       </div>
-                      <div class="cross">
+                      <!-- <div class="cross">
                         <span class="close">&times;</span>
-                      </div>
+                      </div> -->
                     </div>
                     <div class="add-modal-content">
                       <div class="container">
@@ -75,7 +75,7 @@
                       </div>
                     </div>
                     <div class="add-modal-footer">
-                      <button id="add-btn-clear" class = "btn" type="button">Cancel</button> 
+                      <button id="add-btn-clear" class = "btn" type="button" onclick="handleCancelDelete()">Cancel</button> 
                       <button id="add-btn-add" class = "btn" type="button">Delete</button> 
                       
                     </div>
@@ -92,28 +92,28 @@
                         <div>
                           <h1>Add Invoice</h1>
                         </div>
-                        <div class="cross">
+                        <!-- <div class="cross">
                           <span class="close">&times;</span>
-                        </div>
+                        </div> -->
                       </div>
                       <div class="add-modal-content">
                         <div class="left-side-add">
                           <form >
                             <div class="add-modal-inf">
-                              <label class="add-modal-label">Customer Name</label>
+                              <label class="add-modal-label">Customer Name<span style="color: #FF5E5E"> *</span></label>
                               <input class="add-modal-inp" type = "text" name = "first_name" />
                             </div>
                             <div class="add-modal-inf">
-                              <label class="add-modal-label">Customer No.</label>
+                              <label class="add-modal-label">Customer No.<span style="color: #FF5E5E"> *</span></label>
                               <input class="add-modal-inp" type = "text" name = "last_name" />
                             </div>
                             <div class="add-modal-inf">
-                              <label class="add-modal-label">Invoice No.</label>
+                              <label class="add-modal-label">Invoice No.<span style="color: #FF5E5E"> *</span></label>
                               
                               <input class="add-modal-inp" type = "text" name = "first_name" />
                             </div>
                             <div class="add-modal-inf">
-                              <label class="add-modal-label">Invoice Amount</label>
+                              <label class="add-modal-label">Invoice Amount<span style="color: #FF5E5E"> *</span></label>
                             
                               <input class="add-modal-inp" type = "text" name = "last_name" />
                             </div>
@@ -124,7 +124,7 @@
                         <div class="right-side-add">
                           <form >
                             <div class="add-modal-inf">
-                              <label class="add-modal-label">Due Date</label>
+                              <label class="add-modal-label">Due Date<span style="color: #FF5E5E"> *</span></label>
                               <input class="add-modal-inp" type = "date" name = "first_name" />
                             </div>
                             <div class="add-modal-inf">
@@ -136,7 +136,7 @@
                       </div>
 
                       <div class="add-modal-footer">
-                        <button id="add-btn-cancel" class = "btn" type="button">Cancel</button> 
+                        <button id="add-btn-cancel" class = "btn" type="button" onclick="handleCancelAdd()">Cancel</button> 
                         <button id="add-btn-clear" class = "btn" type="button">Clear</button> 
                         <button id="add-btn-add" class = "btn" type="button">Add</button> 
                            

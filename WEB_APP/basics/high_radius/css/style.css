@@ -105,6 +105,7 @@ body{
 .topnav button:hover {
     /* color: #fff; */
     border: 1px solid #14AFF1;
+    color:#FFFFFF;
 }
 
 .topnav input:hover {
@@ -183,7 +184,7 @@ td {
     margin: auto;
     padding: 20px;
     /* border: 1px solid #888; */
-    width: 70%;
+    width: 60rem;
     color:#FFFFFF;
     opacity: 1;
     border-radius: 10px ;
@@ -194,7 +195,7 @@ td {
     margin: auto;
     padding: 20px;
     /* border: 1px solid #888; */
-    width: 35%;
+    width: 30rem;
     color:#FFFFFF;
     opacity: 1;
     border-radius: 10px ;
@@ -288,4 +289,12 @@ td {
 
 .fade{
     color:#C0C6CA;
+}
+
+.add-modal-footer button:hover {
+    /* color: #fff; */
+    border: 1px solid #14AFF1;
+}
+.modal input:hover{
+    border: 1px solid #14AFF1;
 }
