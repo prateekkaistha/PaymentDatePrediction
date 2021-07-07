@@ -69,3 +69,22 @@ function handleCancelEdit(){
 function handleCancelDelete(){
     deleteModal.style.display="none";
 }
+
+function handlAddAdd(){
+    let customer_name_add=document.getElementById('customer_name_add').value;
+    let customer_no_add=document.getElementById('customer_no_add').value;
+    let invoice_no_add=document.getElementById('invoice_no_add').value;
+    let invoice_amount_add=document.getElementById('invoice_amount_add').value;
+    let due_date_add=document.getElementById('due_date_add').value;
+    let notes_add=document.getElementById('notes_add').value;
+
+    console.log();
+}
+function handleClearAdd(){
+    document.getElementById('customer_name_add').value ="";
+    document.getElementById('customer_no_add').value="";
+    document.getElementById('invoice_no_add').value="";
+    document.getElementById('invoice_amount_add').value="";
+    document.getElementById('due_date_add').value="";
+    document.getElementById('notes_add').value="";
+}

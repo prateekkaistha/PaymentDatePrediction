@@ -101,21 +101,19 @@
                           <form >
                             <div class="add-modal-inf">
                               <label class="add-modal-label">Customer Name<span style="color: #FF5E5E"> *</span></label>
-                              <input class="add-modal-inp" type = "text" name = "first_name" />
+                              <input id="customer_name_add" class="add-modal-inp" type = "text" name = "first_name" />
                             </div>
                             <div class="add-modal-inf">
-                              <label class="add-modal-label">Customer No.<span style="color: #FF5E5E"> *</span></label>
-                              <input class="add-modal-inp" type = "text" name = "last_name" />
+                              <label  class="add-modal-label">Customer No.<span style="color: #FF5E5E"> *</span></label>
+                              <input id="customer_no_add" class="add-modal-inp" type = "text" name = "last_name" />
                             </div>
                             <div class="add-modal-inf">
                               <label class="add-modal-label">Invoice No.<span style="color: #FF5E5E"> *</span></label>
-                              
-                              <input class="add-modal-inp" type = "text" name = "first_name" />
+                              <input id="invoice_no_add" class="add-modal-inp" type = "text" name = "first_name" />
                             </div>
                             <div class="add-modal-inf">
                               <label class="add-modal-label">Invoice Amount<span style="color: #FF5E5E"> *</span></label>
-                            
-                              <input class="add-modal-inp" type = "text" name = "last_name" />
+                              <input id="invoice_amount_add" class="add-modal-inp" type = "text" name = "last_name" />
                             </div>
                             
                             
@@ -125,11 +123,11 @@
                           <form >
                             <div class="add-modal-inf">
                               <label class="add-modal-label">Due Date<span style="color: #FF5E5E"> *</span></label>
-                              <input class="add-modal-inp" type = "date" name = "first_name" />
+                              <input id="due_date_add" class="add-modal-inp" type = "date" name = "first_name" />
                             </div>
                             <div class="add-modal-inf">
                               <label class="add-modal-label">Notes</label>
-                              <input id="add-notes" class="add-modal-inp" type = "text" name = "last_name" />
+                              <input id="notes_add" class="add-modal-inp" type = "text" name = "last_name" />
                             </div>
                           </form>
                         </div>
@@ -137,8 +135,8 @@
 
                       <div class="add-modal-footer">
                         <button id="add-btn-cancel" class = "btn" type="button" onclick="handleCancelAdd()">Cancel</button> 
-                        <button id="add-btn-clear" class = "btn" type="button">Clear</button> 
-                        <button id="add-btn-add" class = "btn" type="button">Add</button> 
+                        <button id="add-btn-clear" class = "btn" type="button" onClick="handleClearAdd()">Clear</button> 
+                        <button id="add-btn-add" class = "btn" type="button" onclick="handlAddAdd()">Add</button> 
                            
                       </div>
                     </div>
